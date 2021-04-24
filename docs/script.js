@@ -30,14 +30,85 @@ function checkTime() {
     var time16 = moment('16:00:00', format);
     var time17 = moment('17:00:00', format);
 
-    if (time.isAfter(time9)) {
+    // 9am time coloring
+    if (time.isSame(time9)) {
+        nine.addClass('table-primary');
+    } else if (time.isBefore(time9)) {
+        nine.addClass('table-success');
+    } else if (time.isAfter(time9)) {
+        nine.addClass('table-warning')
+    }
 
-        console.log('is between')
+    // 10am table coloring
+    if (time.isSame(time10)) {
+        ten.addClass('table-primary');
+    } else if (time.isBefore(time10)) {
+        ten.addClass('table-success');
+    } else if (time.isAfter(time10)) {
+        ten.addClass('table-warning')
+    }
 
-    } else {
+    // 11am coloring
+    if (time.isSame(time11)) {
+        eleven.addClass('table-primary');
+    } else if (time.isBefore(time11)) {
+        eleven.addClass('table-success');
+    } else if (time.isAfter(time11)) {
+        eleven.addClass('table-warning')
+    }
 
-        console.log('is not between')
+    // 12 noon coloring
+    if (time.isSame(time12)) {
+        twelve.addClass('table-primary');
+    } else if (time.isBefore(time12)) {
+        twelve.addClass('table-success');
+    } else if (time.isAfter(time12)) {
+        twelve.addClass('table-warning')
+    }
 
+    // 1pm coloring
+    if (time.isSame(time13)) {
+        one.addClass('table-primary');
+    } else if (time.isBefore(time13)) {
+        one.addClass('table-success');
+    } else if (time.isAfter(time13)) {
+        one.addClass('table-warning')
+    }
+
+    // 2pm coloring
+    if (time.isSame(time14)) {
+        two.addClass('table-primary');
+    } else if (time.isBefore(time14)) {
+        two.addClass('table-success');
+    } else if (time.isAfter(time14)) {
+        two.addClass('table-warning')
+    }
+
+    // 3pm coloring
+    if (time.isSame(time15)) {
+        three.addClass('table-primary');
+    } else if (time.isBefore(time15)) {
+        three.addClass('table-success');
+    } else if (time.isAfter(time15)) {
+        three.addClass('table-warning')
+    }
+
+    // 4pm coloring
+    if (time.isSame(time16)) {
+        four.addClass('table-primary');
+    } else if (time.isBefore(time16)) {
+        four.addClass('table-success');
+    } else if (time.isAfter(time16)) {
+        four.addClass('table-warning')
+    }
+
+    // 5pm coloring
+    if (time.isSame(time17)) {
+        five.addClass('table-primary');
+    } else if (time.isBefore(time17)) {
+        five.addClass('table-success');
+    } else if (time.isAfter(time17)) {
+        five.addClass('table-warning')
     }
 }
 checkTime()
