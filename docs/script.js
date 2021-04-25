@@ -26,13 +26,11 @@ var three = $('.3pm');
 var four = $('.4pm');
 var five = $('.5pm');
 var today = moment();
-var dayPass = today.format('MM-DD-YY');
-var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
 
-$("#currentDay").text(today.format("[Today is] dddd"));
+
+$("#currentDay").text(today.format("[Today is] dddd MMM DD, YYYY"));
 
 // check past/present/future blocks
-// console.log(dayPass)
 function checkTime() {
     var format = 'hh'
 
@@ -46,9 +44,10 @@ function checkTime() {
     var time15 = moment('15', format);
     var time16 = moment('16', format);
     var time17 = moment('17', format);
+    var time18 = moment('18', format);
 
     // 9am time coloring
-    if (time.isSame(time9)) {
+    if (time.isBetween(time9, time10)) {
         nine.addClass('table-primary');
     } else if (time.isBefore(time9)) {
         nine.addClass('table-success');
@@ -57,7 +56,7 @@ function checkTime() {
     }
 
     // 10am table coloring
-    if (time.isSame(time10)) {
+    if (time.isBetween(time10, time11)) {
         ten.addClass('table-primary');
     } else if (time.isBefore(time10)) {
         ten.addClass('table-success');
@@ -66,7 +65,7 @@ function checkTime() {
     }
 
     // 11am coloring
-    if (time.isSame(time11)) {
+    if (time.isBetween(time11, time12)) {
         eleven.addClass('table-primary');
     } else if (time.isBefore(time11)) {
         eleven.addClass('table-success');
@@ -75,7 +74,7 @@ function checkTime() {
     }
 
     // 12 noon coloring
-    if (time.isSame(time12)) {
+    if (time.isBetween(time12, time13)) {
         twelve.addClass('table-primary');
     } else if (time.isBefore(time12)) {
         twelve.addClass('table-success');
@@ -84,7 +83,7 @@ function checkTime() {
     }
 
     // 1pm coloring
-    if (time.isSame(time13)) {
+    if (time.isBetween(time13, time14)) {
         one.addClass('table-primary');
     } else if (time.isBefore(time13)) {
         one.addClass('table-success');
@@ -93,7 +92,7 @@ function checkTime() {
     }
 
     // 2pm coloring
-    if (time.isSame(time14)) {
+    if (time.isBetween(time14, time15)) {
         two.addClass('table-primary');
     } else if (time.isBefore(time14)) {
         two.addClass('table-success');
@@ -102,7 +101,7 @@ function checkTime() {
     }
 
     // 3pm coloring
-    if (time.isSame(time15)) {
+    if (time.isBetween(time15, time16)) {
         three.addClass('table-primary');
     } else if (time.isBefore(time15)) {
         three.addClass('table-success');
@@ -111,7 +110,7 @@ function checkTime() {
     }
 
     // 4pm coloring
-    if (time.isSame(time16)) {
+    if (time.isBetween(time16, time17)) {
         four.addClass('table-primary');
     } else if (time.isBefore(time16)) {
         four.addClass('table-success');
@@ -120,7 +119,7 @@ function checkTime() {
     }
 
     // 5pm coloring
-    if (time.isSame(time17)) {
+    if (time.isBetween(time17, time18)) {
         five.addClass('table-primary');
     } else if (time.isBefore(time17)) {
         five.addClass('table-success');
