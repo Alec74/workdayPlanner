@@ -10,7 +10,7 @@ The objectives to complete this homework include the following:
 * After saving the timeblock the text is added to local storage
 * If the page is refreshed then the saved events persist
 
-![image of webpage](images/demo.png)
+![image of webpage](images/betterDemo.png)
 
 View Live Webpage!
 https://alec74.github.io/codeQuiz/

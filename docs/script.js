@@ -48,83 +48,83 @@ function checkTime() {
 
     // 9am time coloring
     if (time.isBetween(time9, time10)) {
-        nine.addClass('table-primary');
+        nine.addClass('present');
     } else if (time.isBefore(time9)) {
-        nine.addClass('table-success');
+        nine.addClass('future');
     } else if (time.isAfter(time9)) {
-        nine.addClass('table-warning')
+        nine.addClass('past')
     }
 
     // 10am table coloring
     if (time.isBetween(time10, time11)) {
-        ten.addClass('table-primary');
+        ten.addClass('present');
     } else if (time.isBefore(time10)) {
-        ten.addClass('table-success');
+        ten.addClass('future');
     } else if (time.isAfter(time10)) {
-        ten.addClass('table-warning')
+        ten.addClass('past')
     }
 
     // 11am coloring
     if (time.isBetween(time11, time12)) {
-        eleven.addClass('table-primary');
+        eleven.addClass('present');
     } else if (time.isBefore(time11)) {
-        eleven.addClass('table-success');
+        eleven.addClass('future');
     } else if (time.isAfter(time11)) {
-        eleven.addClass('table-warning')
+        eleven.addClass('past')
     }
 
     // 12 noon coloring
     if (time.isBetween(time12, time13)) {
-        twelve.addClass('table-primary');
+        twelve.addClass('present');
     } else if (time.isBefore(time12)) {
-        twelve.addClass('table-success');
+        twelve.addClass('future');
     } else if (time.isAfter(time12)) {
-        twelve.addClass('table-warning')
+        twelve.addClass('past')
     }
 
     // 1pm coloring
     if (time.isBetween(time13, time14)) {
-        one.addClass('table-primary');
+        one.addClass('present');
     } else if (time.isBefore(time13)) {
-        one.addClass('table-success');
+        one.addClass('future');
     } else if (time.isAfter(time13)) {
-        one.addClass('table-warning')
+        one.addClass('past')
     }
 
     // 2pm coloring
     if (time.isBetween(time14, time15)) {
-        two.addClass('table-primary');
+        two.addClass('present');
     } else if (time.isBefore(time14)) {
-        two.addClass('table-success');
+        two.addClass('future');
     } else if (time.isAfter(time14)) {
-        two.addClass('table-warning')
+        two.addClass('past')
     }
 
     // 3pm coloring
     if (time.isBetween(time15, time16)) {
-        three.addClass('table-primary');
+        three.addClass('present');
     } else if (time.isBefore(time15)) {
-        three.addClass('table-success');
+        three.addClass('future');
     } else if (time.isAfter(time15)) {
-        three.addClass('table-warning')
+        three.addClass('past')
     }
 
     // 4pm coloring
     if (time.isBetween(time16, time17)) {
-        four.addClass('table-primary');
+        four.addClass('present');
     } else if (time.isBefore(time16)) {
-        four.addClass('table-success');
+        four.addClass('future');
     } else if (time.isAfter(time16)) {
-        four.addClass('table-warning')
+        four.addClass('past')
     }
 
     // 5pm coloring
     if (time.isBetween(time17, time18)) {
-        five.addClass('table-primary');
+        five.addClass('present');
     } else if (time.isBefore(time17)) {
-        five.addClass('table-success');
+        five.addClass('future');
     } else if (time.isAfter(time17)) {
-        five.addClass('table-warning')
+        five.addClass('past')
     }
 }
 
