@@ -13,4 +13,4 @@ The objectives to complete this homework include the following:
 ![image of webpage](images/betterDemo.png)
 
 View Live Webpage!
-https://alec74.github.io/codeQuiz/
+https://alec74.github.io/workdayPlanner/
