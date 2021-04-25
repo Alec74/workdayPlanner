@@ -32,7 +32,7 @@ var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
 $("#currentDay").text(today.format("[Today is] dddd"));
 
 // check past/present/future blocks
-console.log(dayPass)
+// console.log(dayPass)
 function checkTime() {
     var format = 'hh'
 
