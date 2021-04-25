@@ -135,6 +135,48 @@ check = setInterval(function(){
     checkTime()
 },10000)
 
+// default list items by local storage
+function defaultStorage(){
+    if(localStorage.getItem("9am")){
+        var stored9am = [localStorage.getItem("9am")];
+        firstLi.append('<li class="list-group-item">' + stored9am + '</li>');
+        
+    }
+    if(localStorage.getItem("10am")){
+        var stored10am = localStorage.getItem("10am");
+        secondLi.append('<li class="list-group-item">' + stored10am + '</li>');
+    }
+    if(localStorage.getItem("11am")){
+        var stored11am = localStorage.getItem("11am");
+        thirdLi.append('<li class="list-group-item">' + stored11am + '</li>');
+    }
+    if(localStorage.getItem("12am")){
+        var stored12am = localStorage.getItem("12am");
+        fourthLi.append('<li class="list-group-item">' + stored12am + '</li>');
+    }
+    if(localStorage.getItem("1pm")){
+        var stored1pm = localStorage.getItem("1pm");
+        fifthLi.append('<li class="list-group-item">' + stored1pm + '</li>');
+    }
+    if(localStorage.getItem("2pm")){
+        var stored2pm = localStorage.getItem("2pm");
+        sixthLi.append('<li class="list-group-item">' + stored2pm + '</li>');
+    }
+    if(localStorage.getItem("3pm")){
+        var stored3pm = localStorage.getItem("3pm");
+        seventhLi.append('<li class="list-group-item">' + stored3pm + '</li>');
+    }
+    if(localStorage.getItem("4pm")){
+        var stored4pm = localStorage.getItem("4pm");
+        eighthLi.append('<li class="list-group-item">' + stored4pm + '</li>');
+    }
+    if(localStorage.getItem("5pm")){
+        var stored5pm = localStorage.getItem("5pm");
+        ninthLi.append('<li class="list-group-item">' + stored5pm + '</li>');
+    }
+}
+
+defaultStorage();
 // ALL THE BUTTONS FOR EACH TIMEBLOCK
 // number 1
 firstFEl.on('submit', function handleFormSubmit(event) {
@@ -147,9 +189,12 @@ firstFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("9am", eventAdd);
+    var stored9am = localStorage.getItem("9am");
 
     // print to the page
-    firstLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    firstLi.append('<li class="list-group-item">' + stored9am + '</li>');
 
     // clear the input
     $('textarea[name="event1"]').val('')
@@ -166,9 +211,12 @@ secondFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("10am", eventAdd);
+    var stored10am = localStorage.getItem("10am");
 
     // print to the page
-    secondLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    secondLi.append('<li class="list-group-item">' + stored10am + '</li>');
 
     // clear the input
     $('textarea[name="event2"]').val('')
@@ -185,9 +233,12 @@ thirdFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("11am", eventAdd);
+    var stored11am = localStorage.getItem("11am");
 
     // print to the page
-    thirdLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    thirdLi.append('<li class="list-group-item">' + stored11am + '</li>');
 
     // clear the input
     $('textarea[name="event3"]').val('')
@@ -204,9 +255,12 @@ fourthFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("12am", eventAdd);
+    var stored12am = localStorage.getItem("12am");
 
     // print to the page
-    fourthLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    fourthLi.append('<li class="list-group-item">' + stored12am + '</li>');
 
     // clear the input
     $('textarea[name="event4"]').val('')
@@ -223,9 +277,12 @@ fifthFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("1pm", eventAdd);
+    var stored1pm = localStorage.getItem("1pm");
 
     // print to the page
-    fifthLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    fifthLi.append('<li class="list-group-item">' + stored1pm + '</li>');
 
     // clear the input
     $('textarea[name="event5"]').val('')
@@ -242,9 +299,12 @@ sixthFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("2pm", eventAdd);
+    var stored2pm = localStorage.getItem("2pm");
 
     // print to the page
-    sixthLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    sixthLi.append('<li class="list-group-item">' + stored2pm + '</li>');
 
     // clear the input
     $('textarea[name="event6"]').val('')
@@ -261,9 +321,12 @@ seventhFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("3pm", eventAdd);
+    var stored3pm = localStorage.getItem("3pm");
 
     // print to the page
-    seventhLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    seventhLi.append('<li class="list-group-item">' + stored3pm + '</li>');
 
     // clear the input
     $('textarea[name="event7"]').val('')
@@ -280,9 +343,12 @@ eighthFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("4pm", eventAdd);
+    var stored4pm = localStorage.getItem("4pm");
 
     // print to the page
-    eighthLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    eighthLi.append('<li class="list-group-item">' + stored4pm + '</li>');
 
     // clear the input
     $('textarea[name="event8"]').val('')
@@ -299,9 +365,12 @@ ninthFEl.on('submit', function handleFormSubmit(event) {
         console.log('No event items were filled out!');
         return;
     }
+    // local storage addition on click
+    localStorage.setItem("5pm", eventAdd);
+    var stored5pm = localStorage.getItem("5pm");
 
     // print to the page
-    ninthLi.append('<li class="list-group-item">' + eventAdd + '</li>');
+    ninthLi.append('<li class="list-group-item">' + stored5pm + '</li>');
 
     // clear the input
     $('textarea[name="event9"]').val('')
