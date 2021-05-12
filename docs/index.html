@@ -14,71 +14,82 @@
 </head>
 
 <body>
+  <!-- Bootstrap Jumbotron for title and welcome to page -->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
+    <!-- Display the current date to the page below -->
     <p id="currentDay" class="lead"></p>
     <i class="far fa-calendar-alt"></i>
   </header>
+
+  <!-- Container for timeblocks -->
   <div class="container">
-    <!-- Timeblocks go here -->
     <table class="table table-hover">
       <thead>
         <tr>
+          <!-- The name of the 3 columns for the table -->
           <th scope="col">Time <i class="far fa-clock"></i></th>
           <th scope="col">Event <i class="far fa-lightbulb"></i></th>
           <th scope="col">Save <i class="fas fa-thumbtack"></i></th>
         </tr>
       </thead>
+
+      <!-- The body of the table -->
       <tbody class="eventDisplay">
+        <!-- 9am time block with form input and save button -->
         <tr class="9am">
-          <th scope="row">9am  <i class="far fa-arrow-alt-circle-right"></i></th>
+          <th scope="row">9am <i class="far fa-arrow-alt-circle-right"></i></th>
           <td>
             <form class="oneForm">
               <div class="form-group">
                 <textarea class="form-control" rows="3" name="event1"></textarea>
                 <ul class="list-group spot9">
                 </ul>
-                <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
-              </div>
-            </form>
-  
-          </td>
+          <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
+  </div>
+  </form>
 
-        </tr>
-        <tr class="10am">
-          <th scope="row">10am <i class="far fa-arrow-alt-circle-right"></i></th>
-          <td>
-            <form class="twoForm">
-              <div class="form-group">
-                <textarea class="form-control" rows="3"  name="event2"></textarea>
-                <ul class="list-group spot10">
-                </ul>
-                <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
-              </div>
-            </form>
-            </td>
+  </td>
+  </tr>
 
-        </tr>
-        <tr class="11am">
-          <th scope="row">11am <i class="far fa-arrow-alt-circle-right"></i></th>
-          <td>
-            <form  class="threeForm">
-              <div class="form-group">
-                <textarea class="form-control" rows="3"  name="event3"></textarea>
-                <ul class="list-group spot11">
-                </ul>
-                <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
-              </div>
-            </form>
-          </td>
-        </tr>
-    <tr class="12am">
+  <!-- 10am time block with form input and save button -->
+  <tr class="10am">
+    <th scope="row">10am <i class="far fa-arrow-alt-circle-right"></i></th>
+    <td>
+      <form class="twoForm">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" name="event2"></textarea>
+          <ul class="list-group spot10">
+          </ul>
+    <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
+    </div>
+    </form>
+    </td>
+  </tr>
+
+  <!-- 11am time block with form input and save button -->
+  <tr class="11am">
+    <th scope="row">11am <i class="far fa-arrow-alt-circle-right"></i></th>
+    <td>
+      <form class="threeForm">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" name="event3"></textarea>
+          <ul class="list-group spot11">
+          </ul>
+    <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
+    </div>
+    </form>
+    </td>
+  </tr>
+
+  <!-- 12am time block with form input and save button -->
+  <tr class="12am">
     <th scope="row">12 noon <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="fourForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event4"></textarea>
+          <textarea class="form-control" rows="3" name="event4"></textarea>
           <ul class="list-group spot12">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
@@ -86,25 +97,29 @@
     </form>
     </td>
   </tr>
+
+  <!-- 1pm time block with form input and save button -->
   <tr class="1pm">
     <th scope="row">1pm <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="fiveForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event5"></textarea>
+          <textarea class="form-control" rows="3" name="event5"></textarea>
           <ul class="list-group spot13">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
     </div>
     </form>
     </td>
+
+    <!-- 2pm time block with form input and save button -->
   </tr>
   <tr class="2pm">
     <th scope="row">2pm <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="sixForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event6"></textarea>
+          <textarea class="form-control" rows="3" name="event6"></textarea>
           <ul class="list-group spot14">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
@@ -112,12 +127,14 @@
     </form>
     </td>
   </tr>
+
+  <!-- 3pm time block with form input and save button -->
   <tr class="3pm">
     <th scope="row">3pm <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="sevenForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event7"></textarea>
+          <textarea class="form-control" rows="3" name="event7"></textarea>
           <ul class="list-group spot15">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
@@ -125,12 +142,14 @@
     </form>
     </td>
   </tr>
+
+  <!-- 4pm time block with form input and save button -->
   <tr class="4pm">
     <th scope="row">4pm <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="eightForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event8"></textarea>
+          <textarea class="form-control" rows="3" name="event8"></textarea>
           <ul class="list-group spot16">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
@@ -138,12 +157,14 @@
     </form>
     </td>
   </tr>
+
+  <!-- 5pm time block with form input and save button -->
   <tr class="5pm">
     <th scope="row">5pm <i class="far fa-arrow-alt-circle-right"></i></th>
     <td>
       <form class="nineForm">
         <div class="form-group">
-          <textarea class="form-control" rows="3"  name="event9"></textarea>
+          <textarea class="form-control" rows="3" name="event9"></textarea>
           <ul class="list-group spot17">
           </ul>
     <td><button type="submit" class="btn btn-outline-success"><i class="fas fa-save"></i></button></td>
@@ -155,6 +176,7 @@
   </table>
   </div>
 
+  <!-- Script links for jquery moment.js and script file -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
