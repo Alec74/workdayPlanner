@@ -19,6 +19,7 @@ Technologies used:
 * Javascript
 * Bootstrap
 * Google Fonts
+* Font Awesome
 * JQuery
 * Moment.js
 
