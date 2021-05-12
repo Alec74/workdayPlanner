@@ -27,7 +27,7 @@ Welcome to the webpage
 ![image of webpage start](images/demoStart.png)
 
 Add and event
-![image of webpage](images/demoMiddle.png)
+![image of webpage in use](images/demoMiddle.png)
 
 Contact Information:
 * Github: https://github.com/Alec74

@@ -52,6 +52,9 @@ function checkTime() {
     var time17 = moment('17', format);
     var time18 = moment('18', format);
 
+// For each time block check if the time of day has passed or is present
+// add a corresponding coloring class to each depending on scenario
+
     // 9am time coloring
     if (time.isBetween(time9, time10)) {
         nine.addClass('present');
