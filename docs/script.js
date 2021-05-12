@@ -1,3 +1,5 @@
+// Declare variables to be used later in the script
+// Timeblock form variables
 var firstFEl = $('.oneForm');
 var secondFEl = $('.twoForm');
 var thirdFEl = $('.threeForm');
@@ -7,6 +9,8 @@ var sixthFEl = $('.sixForm');
 var seventhFEl = $('.sevenForm');
 var eighthFEl = $('.eightForm');
 var ninthFEl = $('.nineForm');
+
+// Empty ul elements to add user input
 var firstLi = $('.spot9');
 var secondLi = $('.spot10');
 var thirdLi = $('.spot11');
@@ -16,6 +20,8 @@ var sixthLi = $('.spot14');
 var seventhLi = $('.spot15');
 var eighthLi = $('.spot16');
 var ninthLi = $('.spot17');
+
+// each timeblock set into table section variables
 var nine = $('.9am');
 var ten = $('.10am');
 var eleven = $('.11am');
@@ -27,15 +33,15 @@ var four = $('.4pm');
 var five = $('.5pm');
 var today = moment();
 
-
+// get the current day from moment.js
 $("#currentDay").text(today.format("[Today is] dddd MMM DD, YYYY"));
 
-// check past/present/future blocks
+// check past/present/future timeblocks to display accurate coloring
 function checkTime() {
     var format = 'hh'
 
     var time = moment();
-    var time9 = moment('09', format);
+    var time9 = moment('09', format); 
     var time10 = moment('10', format);
     var time11 = moment('11', format);
     var time12 = moment('12', format);
