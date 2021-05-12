@@ -23,7 +23,11 @@ Technologies used:
 * JQuery
 * Moment.js
 
-![image of webpage](images/betterDemo.png)
+Welcome to the webpage
+![image of webpage start](images/demoStart.png)
+
+Add and event
+![image of webpage](images/demoMiddle.png)
 
 Contact Information:
 * Github: https://github.com/Alec74
